@@ -538,19 +538,44 @@
   		var map = new google.maps.Map(
     	document.getElementById('map'), {zoom: 15, center: HajnowkaCenter});
 		// The marker, positioned at Hajnowka
-		var marker = new google.maps.Marker({position: CerkiewHajnowka, map: map, title: "Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12"});
-  var marker2 = new google.maps.Marker({position: DomWeselnyHajnowka, map: map, title: "Dom Weselny Dwa Dęby, ul. Armii Krajowej 3"});
-		// Short description
-	  
-		// var cordInfoWindow = new google.maps.cordInfoWindow();
-		// cordInfoWindow.setContent("Miejsce zaślubin: Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12")
-		// cordInfoWindow.setPosition(CerkiewHajnowka);
-		// cordInfoWindow.open(map);
-	
-		// var cordInfoWindow = new google.maps.cordInfoWindow();
-		// cordInfoWindow.setContent("Dom Weselny Dwa Dęby, ul. Armii Krajowej 3,")
-		// cordInfoWindow.setPosition(DomWeselnyHajnowka);
-		// cordInfoWindow.open(map);
+		
+		var markerCerkiew = new google.maps.Marker({position: CerkiewHajnowka,
+			map: map,
+			title: "Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12"
+		});
+		
+
+		  var markerSalaWeselna = new google.maps.Marker({position: DomWeselnyHajnowka,
+			map: map,
+			title: "Dom Weselny Dwa Dęby, ul. Armii Krajowej 3"
+		});
+		// set little cloud description
+			google.maps.event.addListener(markerCerkiew, 'click', function () {
+				var infowindow = new google.maps.InfoWindow({
+					content: "Zaslubiny!"
+				});
+				infowindow.open(map, markerCerkiew);
+			});
+			google.maps.event.addListener(markerSalaWeselna, 'click', function () {
+				var infowindow = new google.maps.InfoWindow({
+					content: "Weselisko!"
+				});
+				infowindow.open(map, markerSalaWeselna);
+			});
+	}
+	// 	function toggleBounce() {
+	// if (marker.getAnimation() !== null) {
+	// 	marker.setAnimation(null);
+	// } else {
+	// 	marker.setAnimation(google.maps.Animation.BOUNCE);
+	// }
+	// }
+	// 	function drop() {
+	// for (var i =0; i < markerArray.length; i++) {
+	// 	setTimeout(function() {
+	// 	addMarkerMethod();
+	// 	}, i * 200);
+	// }
 	}
 		</script>
 		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
