@@ -121,7 +121,7 @@
 							<h1>Sebastian i Natalia</h1>
 							<h2><strong>11 . 10 . 2019</strong></h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-								<div  class="addeventatc">	Dodaj do kalendarza
+								<div  class="addeventatc">	Dodaj do kalendarza!
 								<span class="start">11/10/2019 17:00</span>
 								<span class="end">11/10/2019 04:00</span>
 								<span class="timezone">Central European Summer Time</span>
@@ -521,58 +521,97 @@
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
+	<div id="map">
+		<h3>My Wedding Maps</h3>
+		<!--The div element for the map -->
+		<div id="map"></div>
+		<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Hajnowka
+	  var CerkiewHajnowka = {lat: 52.7320009, lng: 23.5972677};
+	  var DomWeselnyHajnowka = {lat: 52.7373358, lng: 23.5994764};
+	  // The map, centered at Hajnowka
+	  var map = new google.maps.Map(
+		  document.getElementById('map'), {zoom: 17, center: CerkiewHajnowka});
+	  // The marker, positioned at Hajnowka
+	  var marker = new google.maps.Marker({position: CerkiewHajnowka, map: map});
+	  var marker2 = new google.maps.Marker({position: DomWeselnyHajnowka, map: map});
+	  // Short description
+	  
+	  var cordInfoWindow = new google.maps.cordInfoWindow();
+	  cordInfoWindow.setContent("Miejsce zaślubin: Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12")
+	  cordInfoWindow.setPosition(CerkiewHajnowka);
+	  cordInfoWindow.open(map);
+	
+	  var cordInfoWindow = new google.maps.cordInfoWindow();
+	  cordInfoWindow.setContent("Dom Weselny Dwa Dęby, ul. Armii Krajowej 3,")
+	  cordInfoWindow.setPosition(DomWeselnyHajnowka);
+	  cordInfoWindow.open(map);
+	
+	}
+		</script>
+		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgbKYi-oJD5GLtD6PRYVEjtCf5UfxTodo&callback=initMap">
+		</script>
+	</div>
 
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Estimated Guest</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">We Catter</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Events Done</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Hours Spent</span>
-
+	<div class="hide">
+			<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="col-md-3 col-sm-6 animate-box">
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-users"></i>
+										</span>
+		
+										<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
+										<span class="counter-label">Estimated Guest</span>
+		
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 animate-box">
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-user"></i>
+										</span>
+		
+										<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
+										<span class="counter-label">We Catter</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 animate-box">
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-calendar"></i>
+										</span>
+										<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
+										<span class="counter-label">Events Done</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 animate-box">
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-clock"></i>
+										</span>
+		
+										<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
+										<span class="counter-label">Hours Spent</span>
+		
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
+	
 
 	
 
