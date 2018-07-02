@@ -526,29 +526,31 @@
 		<!--The div element for the map -->
 		<div id="map"></div>
 		<script>
-	// Initialize and add the map
-	function initMap() {
-	  // The location of Hajnowka
-	  var CerkiewHajnowka = {lat: 52.7320009, lng: 23.5972677};
-	  var DomWeselnyHajnowka = {lat: 52.7373358, lng: 23.5994764};
-	  // The map, centered at Hajnowka
-	  var map = new google.maps.Map(
-		  document.getElementById('map'), {zoom: 17, center: CerkiewHajnowka});
-	  // The marker, positioned at Hajnowka
-	  var marker = new google.maps.Marker({position: CerkiewHajnowka, map: map});
-	  var marker2 = new google.maps.Marker({position: DomWeselnyHajnowka, map: map});
-	  // Short description
+		// Initialize and add the map
+		function initMap() {
+	
+		// The location of Hajnowka
+		var CerkiewHajnowka = {lat: 52.7320009, lng: 23.5972677};
+ 		var DomWeselnyHajnowka = {lat: 52.7373358, lng: 23.5994764};
+  		var HajnowkaCenter = {lat: 52.735500, lng: 23.5994764}
+
+  		// The map, centered at Hajnowka
+  		var map = new google.maps.Map(
+    	document.getElementById('map'), {zoom: 15, center: HajnowkaCenter});
+		// The marker, positioned at Hajnowka
+		var marker = new google.maps.Marker({position: CerkiewHajnowka, map: map});
+		var marker2 = new google.maps.Marker({position: DomWeselnyHajnowka, map: map});
+		// Short description
 	  
-	  var cordInfoWindow = new google.maps.cordInfoWindow();
-	  cordInfoWindow.setContent("Miejsce zaślubin: Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12")
-	  cordInfoWindow.setPosition(CerkiewHajnowka);
-	  cordInfoWindow.open(map);
+		var cordInfoWindow = new google.maps.cordInfoWindow();
+		cordInfoWindow.setContent("Miejsce zaślubin: Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12")
+		cordInfoWindow.setPosition(CerkiewHajnowka);
+		cordInfoWindow.open(map);
 	
-	  var cordInfoWindow = new google.maps.cordInfoWindow();
-	  cordInfoWindow.setContent("Dom Weselny Dwa Dęby, ul. Armii Krajowej 3,")
-	  cordInfoWindow.setPosition(DomWeselnyHajnowka);
-	  cordInfoWindow.open(map);
-	
+		var cordInfoWindow = new google.maps.cordInfoWindow();
+		cordInfoWindow.setContent("Dom Weselny Dwa Dęby, ul. Armii Krajowej 3,")
+		cordInfoWindow.setPosition(DomWeselnyHajnowka);
+		cordInfoWindow.open(map);
 	}
 		</script>
 		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
