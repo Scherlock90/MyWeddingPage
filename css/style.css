@@ -50,7 +50,6 @@ body {
   background: rgba(0, 0, 0, 0.7);
   content: "";
 }
-
 a {
   color: #F14E95;
   -webkit-transition: 0.5s;
@@ -61,6 +60,9 @@ a:hover, a:active, a:focus {
   color: #F14E95;
   outline: none;
   text-decoration: none;
+}
+.formule {
+  tex
 }
 
 p {
