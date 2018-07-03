@@ -799,7 +799,7 @@ h2 {
 }
 .fh5co-contact-info ul li:before {
   color: #F14E95;
-  position: absolute;
+  position: center;
   left: 0;
   top: .05em;
   font-family: 'icomoon';
