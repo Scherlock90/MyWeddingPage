@@ -56,8 +56,18 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-a:hover, a:active, a:focus {
+ a:active {
   color: #F14E95;
+  outline: none;
+  text-decoration: none;
+}
+a:focus {
+  color: yellow;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
   outline: none;
   text-decoration: none;
 }
