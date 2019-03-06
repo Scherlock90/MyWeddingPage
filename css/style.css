@@ -843,6 +843,11 @@ h2 {
 form label {
   font-weight: normal !important;
 }
+@media only screen and (min-width: 1200px) {
+  .namePerson{
+    height: 150px;
+  }
+}
 
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
@@ -864,7 +869,7 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1.5;
   font-family: "Sacramento", Arial, serif;
 }
@@ -879,7 +884,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -992,6 +997,34 @@ form label {
   height: 100px;
   width: 100px;
 }
+@media only screen and (min-width: 320px) {
+  .simply-countdown > .simply-section {
+    height: 50px;
+    width: 50px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 28px !important;
+  }
+  .simply-countdown > .simply-section > div {
+    height: 50px;
+  }
+  .fh5co-cover .display-tc h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .simply-countdown > .simply-section {
+    height: 100px;
+    width: 100px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 30px ;
+  }
+  .simply-countdown > .simply-section > div {
+    height: 100px;
+  }
+}
+
 
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
