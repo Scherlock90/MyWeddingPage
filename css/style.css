@@ -848,7 +848,8 @@ form label {
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
   display: table-cell !important;
-  vertical-align: middle;
+  vertical-align: bottom;
+  padding: 1em;
 }
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,

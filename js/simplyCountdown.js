@@ -118,7 +118,7 @@
                 year: 2019,
                 month: 10,
                 day: 11,
-                hours: 17,
+                hours: 15,
                 minutes: 0,
                 seconds: 0,
                 words: {
@@ -167,7 +167,7 @@
                 targetTmpDate.getUTCFullYear(),
                 targetTmpDate.getUTCMonth(),
                 targetTmpDate.getUTCDate(),
-                targetTmpDate.getUTCHours(),
+                targetTmpDate.getUTCHours() + 1, //for GTC + 1
                 targetTmpDate.getUTCMinutes(),
                 targetTmpDate.getUTCSeconds()
             );
