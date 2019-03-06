@@ -485,98 +485,37 @@
 
 		<div id="fh5co-services" class="fh5co-section-gray">
 			<div class="container">
-
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 						<h2>Abyście się nie zgubili, mapę wam zostawiliśmy!</h2>
 						<p>Przybliżając mape tą, ujrzysz drogę swą.</p>
 					</div>
 				</div>
-				<div class="hide">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>We Organized Events</h3>
-									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto
-										culpa amet.
-									</p>
-								</div>
-							</div>
-
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-image"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Photoshoot</h3>
-									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto
-										culpa amet.
-									</p>
-								</div>
-							</div>
-
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-video"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Video Editing</h3>
-									<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto
-										culpa amet.
-									</p>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-md-6 animate-box">
-							<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-								<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo">
-									<i class="icon-video2"></i>
-								</a>
-								<div class="overlay"></div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
 		<div id="map">
-			<h3>My Wedding Maps</h3>
-			<!--The div element for the map -->
 			<div id="map"></div>
 			<script>
-				// Initialize and add the map
 				function initMap() {
-
 					// The location of Hajnowka
 					var CerkiewHajnowka = { lat: 52.7320009, lng: 23.5971677 };
 					var DomWeselnyHajnowka = { lat: 52.7373358, lng: 23.5993764 };
 					var HajnowkaCenter = { lat: 52.735500, lng: 23.5994764 }
-
 					// The map, centered at Hajnowka
 					var map = new google.maps.Map(
 						document.getElementById('map'), { zoom: 15, center: HajnowkaCenter });
 					// The marker, positioned at Hajnowka
-
 					var markerCerkiew = new google.maps.Marker({
 						position: CerkiewHajnowka,
 						map: map,
 						title: "Cerkiew pw. Narodzenia św. Jana Chrzciciela, ul. Mikołaja Reja 12"
 					});
-
-
 					var markerSalaWeselna = new google.maps.Marker({
 						position: DomWeselnyHajnowka,
 						map: map,
 						title: "Dom Weselny Dwa Dęby, ul. Armii Krajowej 3"
 					});
-
 					// set Little cloud description
 					google.maps.event.addListener(markerCerkiew, 'click', function () {
 						var infowindow = new google.maps.InfoWindow({
@@ -604,12 +543,10 @@
 							addMarkerMethod();
 						}, i * 200);
 					}
-
 				}
 			</script>
 			<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgbKYi-oJD5GLtD6PRYVEjtCf5UfxTodo&callback=initMap">
-			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgbKYi-oJD5GLtD6PRYVEjtCf5UfxTodo&callback=initMap"></script>
 		</div>
 
 		<footer id="fh5co-footer" role="contentinfo">
