@@ -72,7 +72,6 @@ a:hover {
   text-decoration: none;
 }
 .formule {
-  text
 }
 
 p {
@@ -1012,13 +1011,28 @@ form label {
     font-size: 40px;
   }
 }
+@media only screen and (min-width: 769px) {
+  .simply-countdown > .simply-section {
+    height: 100px;
+    width: 100px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 30px !important;
+  }
+  .simply-countdown > .simply-section > div {
+    height: 100px;
+  }
+  .fh5co-cover .display-tc h1 {
+    font-size: 40px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .simply-countdown > .simply-section {
     height: 100px;
     width: 100px;
   }
   .simply-countdown > .simply-section .simply-amount {
-    font-size: 30px ;
+    font-size: 30px !important ;
   }
   .simply-countdown > .simply-section > div {
     height: 100px;
