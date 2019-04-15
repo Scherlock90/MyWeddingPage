@@ -881,6 +881,9 @@ pre code {
   .container {
     width: 750px;
   }
+  .mainContainer{
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .container {
