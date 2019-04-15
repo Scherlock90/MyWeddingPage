@@ -7,6 +7,20 @@
   margin: 2em;
   padding: 2em;
 }
+.cardImage .thumbTitle {
+  color: #fafafa;
+  font-size: 20px;
+  transform: translateY(-400px);
+  text-align: center;
+  opacity: 0;
+}
+
+.cardImage:hover .thumbTitle {
+  color: #fafafa;
+  opacity: 1;
+  transition: opacity 3s;
+  background-color: #039be5;
+}
 .containerGallery{
   width: 1200px;
   height: 400px;
@@ -65,13 +79,14 @@
 .containerGallery .box:hover:after {
   bottom: -100%;
 }
+
 @media only screen and (max-width: 1350px){
   .cont{
     padding: 2em 0 2em 0;
     margin: 0;
   }
   .containerGallery{
-    width: 900px;
+    width: 1000px;
   }
   .box1{
     display: none;
@@ -86,6 +101,9 @@
   }
   .box3{
     display: flex;
+  }
+  .card2{
+    display: none;
   }
 }
 @media only screen and (max-width: 1000px){
@@ -106,6 +124,9 @@
   }
   .box4{
     display: flex;
+  }
+  .card3{
+    display: none;
   }
 }
 
