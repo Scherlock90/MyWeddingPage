@@ -37,6 +37,24 @@ body {
   overflow: hidden;
   position: absolute;
 }
+img.heart-copule{
+  width: 45px;
+}
+img.pink-phone{
+  width: 80px;
+}
+img.time-icon{
+  width: 60px;
+  border-radius: 100%;
+}
+img.arrow-up{
+  padding: 0.1em;
+  width: 90%;
+}
+.main-text{
+  padding-top: 2em;
+  color: #fff !important;
+}
 .offcanvas #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
@@ -70,8 +88,6 @@ a:hover {
   color: red;
   outline: none;
   text-decoration: none;
-}
-.formule {
 }
 
 p {
@@ -1708,11 +1724,11 @@ form label {
   border-bottom: none !important;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
+  /* .fh5co-nav-toggle {
     .hide{
       display: block;
     }
-  }
+  } */
 }
 
 .btn {
@@ -1911,23 +1927,3 @@ form label {
   opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
-
-
-.heart-copule{
-  width: 45px;
-}
-.pink-phone{
-  width: 80px;
-}
-.time-icon{
-  width: 60px;
-  border-radius: 100%;
-}
-.arrow-up{
-  padding: 0.1em;
-  width: 90%;
-}
-.main-text{
-  padding-top: 2em;
-  color: #fff !important;
-}
