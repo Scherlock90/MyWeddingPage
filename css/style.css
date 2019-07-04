@@ -41,11 +41,13 @@ img.heart-copule{
   width: 45px;
 }
 img.pink-phone{
-  width: 80px;
+  width: 40px;
 }
-img.time-icon{
+img.weeding-icon{
   width: 60px;
+  height: 60px;
   border-radius: 100%;
+  border: #F14E95 2px solid;
 }
 img.arrow-up{
   padding: 0.1em;
